@@ -1,0 +1,31 @@
+project:
+  type: website
+website:
+  title: "R-HTA in LMICs"
+  site-url: https://r-htalmicstest.org
+  navbar:
+    logo: "assets/images/logo2-removebg-preview.png"   # Logo will link to index.qmd by default
+    left:
+      - href: about.qmd
+        text: About
+      - href: people.qmd
+        text: Committee
+      - href: tutorials.qmd
+        text: Tutorials
+      - href: resources.qmd
+        text: Learning Resources
+      - href: events.qmd
+        text: Events & Workshops
+  
+ 
+format:
+  html:
+    theme: spacelab #simplex #lumen #yeti   #  litera     # or 'minty', 'flatly', etc.
+    toc: true
+    css: styles.css
+    include-after-body: _footer.html
+    include-in-header: 
+      - text: |
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+editor: visual

@@ -1,0 +1,36 @@
+---
+title: "Learning Resources"
+format:
+  html:
+    toc: true
+    toc-title: "Resource Topics"
+---
+
+A curated list of resources for learning R and building health economic models for HTA, tailored to LMIC settings.
+
+---
+
+## 🔰 Basic R
+
+- [Intro2R script](https://github.com/R-HTA-in-LMICs/June-Workshop/blob/main/R/Intro2R.R) — Input/output and object manipulation  
+- [Intro tutorial materials](https://github.com/R-HTA-in-LMICs/June-Workshop)
+
+---
+
+## 🔁 Intermediate Modelling
+
+**Based on DARTH materials:**
+
+- [Time-Dependent Models paper (2022)](https://arxiv.org/abs/2108.13552)
+- [Simulation script](https://github.com/R-HTA-in-LMICs/September-Workshop/blob/main/analysis/cSTM_time_dep_simulation.R)
+- [State-residence time model](https://github.com/R-HTA-in-LMICs/September-Workshop/blob/main/analysis/Extra%20material%20-%20cSTM_time_dep_state_residence/cSTM_time_dep_state_residence.R)
+- [Functions for analysis](https://github.com/R-HTA-in-LMICs/September-Workshop/tree/main/R)
+
+---
+
+## 🚀 Advanced & Interactive Modelling
+
+- [Advanced HIV Markov model in R](https://github.com/R-HTA-in-LMICs/Advanced-Tutorial-2022)  
+- [Explore interactive app](https://r-htalmics.shinyapps.io/hiv_model/)
+
+> Shiny allows interactive web apps to communicate decision models intuitively.

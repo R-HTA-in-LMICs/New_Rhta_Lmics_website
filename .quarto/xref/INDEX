@@ -1,0 +1,29 @@
+{
+  "index.qmd": {
+    "index.html": "e291ac92"
+  },
+  "about.qmd": {
+    "about.html": "92b02abd"
+  },
+  "people.qmd": {
+    "people.html": "db5ae504"
+  },
+  "resources.md": {
+    "resources.html": "7e2b7f7f"
+  },
+  "tutorials.md": {
+    "tutorials.html": "bbd850b2"
+  },
+  "workshops.md": {
+    "workshops.html": "1f7069a8"
+  },
+  "resources.qmd": {
+    "resources.html": "ecbb6fc4"
+  },
+  "events.qmd": {
+    "events.html": "bfc35432"
+  },
+  "tutorials.qmd": {
+    "tutorials.html": "065c7b6d"
+  }
+}

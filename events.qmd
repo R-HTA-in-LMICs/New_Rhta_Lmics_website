@@ -1,0 +1,38 @@
+---
+title: "Events & Workshops"
+format:
+  html:
+    toc: true
+    toc-title: "Past Workshops"
+---
+
+The R-HTA in LMICs chapter hosts annual workshops showcasing R applications in health economics from students, academics, and professionals in LMICs.
+
+------------------------------------------------------------------------
+
+## 📅 2023 Workshop
+
+⚠️ Workshop not hosted due to capacity issues.\
+🔗 [Attend the main R-HTA workshop](https://r-hta.org/events/workshop/2023/)
+
+------------------------------------------------------------------------
+
+## 📅 2022 Workshop — Inaugural Event
+
+### ✅ Topics Presented:
+
+-   **Github & R for Beginners** — [Joshua Soboil](https://jsoboil.github.io/)\
+    → [Tutorial Repo](https://github.com/R-HTA-in-LMICs/Getting-Started-with-Github-and-R)
+
+-   **BCEA in R** — [Dr Nathan Green](https://www.ucl.ac.uk/statistics/dr-nathan-green)
+
+-   **Shiny for HTA** — [Rose Hart](https://www.bresmed.com/team/rose-hart/) & [Robert Smith](https://www.sheffield.ac.uk/scharr/people/pgr-students/robert-smith)\
+    → [Shiny Case Study](https://github.com/r-hta/R-Shiny-for-HTA)
+
+-   **FGM Cost Model** — [David Tordup](http://www.davidtordrup.dk/)\
+    → [BMJ Global Health article](https://gh.bmj.com/content/7/2/e004512)
+
+-   **COVID Cost-Effectiveness** — [Dr Alejandro Lopez Osornio](https://www.himss.org/speaker-alejandro-lopez-osornio)\
+    → [App](https://iecs.shinyapps.io/covid-model-v2/)
+
+-   **Panel: R for HTA in LMICs** — [Fernando Escudero](https://r-hta.org/authors/fernando-alarid-escudero/), [Lucy Cunnama](https://southafrica.inspiringfifty.org/lucy-cunnama), [Howard Thom](https://www.bristol.ac.uk/people/person/Howard-Thom-7d5ace0c-a4eb-4fa0-8c0b-37dc141c0e9f/), [Buhle Ndweni](https://za.linkedin.com/in/buhle-n-04a5661a)
