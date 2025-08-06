@@ -1,0 +1,107 @@
+- year: 2025
+  title: "2025 Workshop — Advanced Topics in R for HTA"
+  presentations:
+    - title: "Day 1 – Part 1: Overview of R Programming"
+      presenter: Islem Meherzi
+      presenter_url: https://www.linkedin.com/in/islem-meherzi-bba309b3/
+      description: "Introduction to R fundamentals and real-world applications in HTA."
+      slides: https://islem.quarto.pub/overview-of-r-from-basics-to-real-world-applications-in-hta-context/#/title-slide
+      youtube: https://youtu.be/-8bJugNmTwk
+      github: https://github.com/R-HTA-in-LMICs/Basic-to-Intermediate-R-for-HTA-2025
+
+    - title: "Day 1 – Part 2: Data Manipulation and Web Scraping in R"
+      presenter: Islem Meherzi
+      presenter_url: https://www.linkedin.com/in/islem-meherzi-bba309b3/
+      description: "Using `dplyr` and `rvest` to prepare and scrape data for HTA workflows."
+      slides: https://islem.quarto.pub/r-workshop-part-2-r-for-data-manipulation--web-scraping-using-dplyr--rvest/#/title-slide
+      youtube: https://youtu.be/-8bJugNmTwk
+      github: https://github.com/R-HTA-in-LMICs/Basic-to-Intermediate-R-for-HTA-2025
+
+    - title: "Day 2 – Cost-Effectiveness in R-HTA Modelling"
+      presenter: R-HTA in LMICs team
+      description: "Practical workshop on implementing cost-effectiveness models in R for HTA."
+      youtube: https://youtu.be/7t-ATWJfpUw
+      github: https://github.com/R-HTA-in-LMICs/Basic-to-Intermediate-R-for-HTA-2025
+
+- year: 2024
+  title: "2024 Workshop — Introduction to R for HTA"
+  presentations:
+    - title: "Introduction to R for HTA 2024"
+      presenter: R-HTA in LMICs team
+      description: "Getting to grips with R for basic survival analysis and health economic analysis."
+      github: https://github.com/R-HTA-in-LMICs/Introduction-to-R-for-HTA-2024
+      youtube: https://www.youtube.com/@r-htainlmics4175
+
+- year: 2022
+  title: 2022 Workshop — Inaugural Event
+  presentations:
+  - title: Introduction
+    presenter: Co-chairs of the R-HTA in LMICs chapter
+    description: Introduction to the chapter and team motivation.
+    youtube: https://www.youtube.com/@r-htainlmics4175
+  - title: Getting Started with Github and R
+    presenter: Joshua Soboil
+    presenter_url: https://jsoboil.github.io/
+    description: Tutorial on using GitHub with R and RStudio.
+    github: https://github.com/R-HTA-in-LMICs/Getting-Started-with-Github-and-R
+    youtube: https://www.youtube.com/@r-htainlmics4175
+  - title: BCEA in R
+    presenter: Dr Nathan Green
+    presenter_url: https://www.ucl.ac.uk/statistics/dr-nathan-green
+    description: Introduction to the BCEA package for decision modelling.
+    article: https://cran.r-project.org/web/packages/BCEA/index.html
+    youtube: https://www.youtube.com/@r-htainlmics4175
+  - title: Shiny for HTA
+    presenter: Rose Hart & Robert Smith
+    presenter_url:
+    - https://www.bresmed.com/team/rose-hart/
+    - https://www.sheffield.ac.uk/scharr/people/pgr-students/robert-smith
+    description: Wrapping health economic models in Shiny for interactivity.
+    github: https://github.com/r-hta/R-Shiny-for-HTA
+    youtube: https://www.youtube.com/@r-htainlmics4175
+  - title: FGM Cost Model
+    presenter: David Tordup
+    presenter_url: http://www.davidtordrup.dk/
+    description: WHO-commissioned model on FGM in 27 countries.
+    article: https://gh.bmj.com/content/7/2/e004512
+    youtube: https://www.youtube.com/@r-htainlmics4175
+  - title: Pedagogical CEA Model of Screening
+    presenter: Yi-Shu Lin
+    presenter_url: https://www.tcd.ie/medicine/health_policy_management/staff/
+    description: A lightweight model for teaching screening cost-effectiveness.
+    github: https://github.com/yishu-lin/Pedagogical-CEA-Model-of-Screening
+    link: https://github.com/R-HTA-in-LMICs/R-HTA-in-LMICs-Q1-workshop-2022/tree/main/presentations
+    youtube: https://www.youtube.com/@r-htainlmics4175
+  - title: Budget Impact Analysis
+    presenter: Dr Federico Cairoli
+    presenter_url: https://www.iecs.org.ar/evaluacion-de-tecnologias-sanitarias-y-economia-de-la-salud/equipo-de-trabajo/
+    description: A Shiny calculator for budget impact.
+    app: https://github.com/yishu-lin/Pedagogical-CEA-Model-of-Screening
+    youtube: https://www.youtube.com/@r-htainlmics4175
+  - title: Modelling COVID in R
+    presenter: Dr Ivan Zimmerman
+    presenter_url: https://www.linkedin.com/in/ivan-zimmermann-57392852/
+    description: Using R instead of Excel for SIR models.
+    youtube: https://www.youtube.com/@r-htainlmics4175
+  - title: COVID Vaccine Cost-Effectiveness
+    presenter: Dr Alejandro Lopez Osornio
+    presenter_url: https://www.himss.org/speaker-alejandro-lopez-osornio
+    description: Cost-effectiveness analysis of COVID-19 vaccines.
+    app: https://iecs.shinyapps.io/covid-model-v2/
+    github: https://github.com/ciips-code/seir_ages
+    youtube: https://www.youtube.com/@r-htainlmics4175
+  - title: A Need for Change – CEA Coding Framework
+    presenter: Dr Fernando Escudero
+    presenter_url: https://r-hta.org/authors/fernando-alarid-escudero/
+    description: Framework for improving transparency in R decision modelling.
+    article: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6871515/
+    youtube: https://www.youtube.com/@r-htainlmics4175
+  - title: 'Panel Discussion: Modern Software Tools for HTA'
+    presenter: Fernando Escudero, Gianluca Baio, Lucy Cunnama, Howard Thom
+    presenter_url:
+    - https://r-hta.org/authors/fernando-alarid-escudero/
+    - https://www.ucl.ac.uk/statistics/people/gianlucabaio
+    - https://southafrica.inspiringfifty.org/lucy-cunnama
+    - https://www.bristol.ac.uk/people/person/Howard-Thom-7d5ace0c-a4eb-4fa0-8c0b-37dc141c0e9f/
+    description: Panel on software features for HTA in LMICs.
+    youtube: https://www.youtube.com/@r-htainlmics4175

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Tutorials – R-HTA in LMICs</title>
+<title>Tutorials</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -66,13 +66,48 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.addEventListener("DOMContentLoaded", () => {
+
+    const brand = document.querySelector(".navbar-brand");
+
+    if (brand) {
+
+      brand.innerHTML = `
+
+        <div class="custom-brand">
+
+          <img src="assets/images/logo2-removebg-preview.png" alt="Logo" class="custom-logo" />
+
+          <div class="brand-text">
+
+            <div class="brand-title">R-HTA in LMICs</div>
+
+          <div class="brand-subtitle">A chapter of the R-HTA consortium</div>
+
+          </div>
+
+        </div>
+
+      `;
+
+    }
+
+  });
+
+</script>
+
+
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&amp;display=swap" rel="stylesheet">
 
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="floating nav-fixed">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -81,9 +116,6 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
     <img src="./assets/images/logo2-removebg-preview.png" alt="" class="navbar-logo">
-    </a>
-    <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">R-HTA in LMICs</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -97,7 +129,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./people.html"> 
+    <a class="nav-link" href="./commitee.html"> 
 <span class="menu-text">Committee</span></a>
   </li>  
   <li class="nav-item">
@@ -105,12 +137,12 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Tutorials</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./resources.html"> 
+    <a class="nav-link" href="./resrcs.html"> 
 <span class="menu-text">Learning Resources</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./events.html"> 
-<span class="menu-text">Events &amp; Workshops</span></a>
+    <a class="nav-link" href="./workshops.html"> 
+<span class="menu-text">Workshops</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -120,25 +152,12 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Tutorial Sessions</h2>
-   
-  <ul>
-  <li><a href="#september-2023-introduction-to-r-for-hta-modelling" id="toc-september-2023-introduction-to-r-for-hta-modelling" class="nav-link active" data-scroll-target="#september-2023-introduction-to-r-for-hta-modelling">📅 25 September 2023 — Introduction to R for HTA Modelling</a></li>
-  <li><a href="#january-2023-intermediate-r-shiny" id="toc-january-2023-intermediate-r-shiny" class="nav-link" data-scroll-target="#january-2023-intermediate-r-shiny">📅 20 January 2023 — Intermediate R &amp; Shiny</a></li>
-  <li><a href="#september-2022-time-dependent-markov-models" id="toc-september-2022-time-dependent-markov-models" class="nav-link" data-scroll-target="#september-2022-time-dependent-markov-models">📅 20 September 2022 — Time-Dependent Markov Models</a></li>
-  </ul>
-</nav>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-    </div>
+    
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -147,7 +166,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page">
 
     
   
@@ -229,7 +248,7 @@ ul.task-list li input[type="checkbox"] {
 
         <a href="about.html">Our Mission</a>
 
-        <a href="team.html">Team</a>
+        <a href="people.html">Team</a>
 
       </div>
 
@@ -269,9 +288,15 @@ ul.task-list li input[type="checkbox"] {
 
   <div class="footer-bottom">
 
-    © 2025 R-HTA in LMICs. All rights reserved.
+  © 2025 R-HTA in LMICs. Maintained by 
 
-  </div>
+  <a href="https://www.linkedin.com/in/islem-meherzi-bba309b3/" target="_blank" rel="noopener noreferrer">
+
+    Islem
+
+  </a>.
+
+</div>
 
 </footer>
 

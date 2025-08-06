@@ -4,8 +4,49 @@ format:
   html:
     toc: false
     page-layout: full
+    body-width: 100%  
     css: styles.css
+execute:
+  freeze: auto
 ---
+
+```{r, results='asis', echo=FALSE}
+#| message: false
+#| warning: false
+library(yaml)
+library(dplyr)
+
+# Load all events
+myevents <- yaml::read_yaml("files_for_update/all_events.yml")
+
+# Convert dates and sort
+events_df <- bind_rows(myevents) %>%
+  mutate(date = as.Date(date)) %>%
+  arrange(date)
+
+# Today's date
+today <- Sys.Date()
+
+# Separate upcoming and past
+upcoming <- events_df %>% filter(date >= today)
+past <- events_df %>% filter(date < today)
+
+# Get the next upcoming event (if any)
+next_event <- if (nrow(upcoming) > 0) upcoming[1, ] else NULL
+
+if (!is.null(next_event)) {
+cat(paste0(
+  '<div class="featured-event-box">\n',
+  '<h2 class="event-title">🚨 ', next_event$title, '</h2>\n',
+  '<img src="', next_event$image, '" class="event-banner"/>\n',
+  
+  # '<p class="event-date"><strong>Date:</strong> ', next_event$date, '</p>\n',
+  # '<p class="event-description">', next_event$description, '</p>\n',
+  '<a class="btn btn-highlight" href="', next_event$link, '">👉 Reserve Your Spot</a>\n',
+  '</div>\n\n'
+))
+}
+```
 
 ::: {.hero style="background-color:#eaf3fc; padding: 3rem; border-radius: 16px; text-align: left;"}
 # R for HTA in LMICs
@@ -14,11 +55,8 @@ format:
 
 We help health economists and decision modelers in LMICs use R for cost-effectiveness analysis and health technology assessment.
 
-[Explore Our Tutorials](tutorials.qmd){.btn .btn-primary} [Meet the Committee](people.qmd){.btn .btn-outline}
+[Explore Our Workshops](workshops.qmd){.btn .btn-primary} [Meet the Committee](commitee.qmd){.btn .btn-outline}
 :::
-
-
-------------------------------------------------------------------------
 
 ::: section-box
 ## Who We Are {.section-title}
@@ -29,29 +67,41 @@ We promote the use of R for HTA in LMICs through open-access tutorials, workshop
 [Learn More](about.qmd)
 :::
 
-::::::: section-box
+:::::::::: section-box
 ## What We Do {.section-title}
 
-:::::: card-grid
-::: card
+::::::::: card-grid
+:::: card
 <h3>Tutorials</h3>
 
 Hands-on R training for health economists.
-:::
 
-::: card
+::: past-events-link
+<a href="tutorials.qmd">🎓 Browse R Training Tutorials » </a>
+:::
+::::
+
+:::: card
 <h3>Resources</h3>
 
 Curated tools and links for R and HTA.
-:::
 
-::: card
+::: past-events-link
+<a href="resources.qmd">🛠️ Explore R + HTA Tools »</a>
+:::
+::::
+
+:::: card
 <h3>Events</h3>
 
 Workshops led by international experts.
+
+::: past-events-link
+<a href="past-events.qmd">📚 View All Past Events »</a>
 :::
-::::::
-:::::::
+::::
+:::::::::
+::::::::::
 
 ::: section-box
 ## Get Involved {.section-title}
@@ -61,20 +111,74 @@ Workshops led by international experts.
 :::
 
 ::: section-box
-## Recent Event Highlight {.section-title}
-
-**Introduction to R for HTA Modelling – 25 September 2023**
-
-![Intro tutorial banner](assets/images/Registrations%20open%20-%2025%20Sept%202023%20training%20.png)
-
-This half-day interactive tutorial trained LMIC health analysts on using R for HTA modelling.\
-Participants learned R basics and built a simple cost-effectiveness model.
-
-[View Workshop Materials](https://github.com/R-HTA-in-LMICs/Introduction-to-R-for-HTA-2023)
-:::
-
-::: section-box
 ## Past Tutorials {.section-title}
 
 [Browse our full list of tutorials](tutorials.qmd)
 :::
+
+```{=html}
+<style>
+  .featured-event-box {
+  background-color: #fff8e1;
+  border-left: 6px solid #ff9800;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  animation: fadeIn 0.8s ease-in;
+  text-align: center;
+}
+
+/* Make image more prominent */
+.event-banner {
+  width: 100%;
+  max-height: 500px;
+  object-fit: contain; 
+  border-radius: 8px;
+  margin: 0 auto 1rem auto;
+  display: block;
+}
+
+/* Smaller title */
+.event-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0.5rem 0;
+}
+
+/* Date formatting */
+.event-date {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+/* Description */
+.event-description {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 1.5rem;
+}
+
+.featured-event-box .btn {
+  align-self: flex-end;
+  background-color: #ff9800;
+  color: white;
+  padding: 0.75rem 1.5rem;  /* Bigger padding */
+  font-size: 1.1rem;         /* Bigger text */
+  border-radius: 8px;        /* Softer edges */
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Nice subtle shadow */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+   
+}
+
+.featured-event-box .btn:hover {
+  background-color: #e68900;
+  transform: scale(1.05);  /* Slight zoom effect on hover */
+}
+
+</style>
+```

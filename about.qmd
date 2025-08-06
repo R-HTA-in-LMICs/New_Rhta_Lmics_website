@@ -1,12 +1,10 @@
 ---
-title: "About"
 format:
   html:
-    toc: true
-    toc-depth: 2
-    number-sections: false
-    self-contained: true
-page-layout: full
+    toc: false
+    page-layout: full
+    body-width: 100% 
+    css: styles.css
 image: assets/images/avatar.png
 ---
 
@@ -18,62 +16,43 @@ image: assets/images/avatar.png
 
 To empower LMIC (low- and middle-income countries) health systems with cutting-edge, reproducible, and accessible analytical tools for HTA using the R language.
 
----
+------------------------------------------------------------------------
 
 ## What is R-HTA in LMICs?
 
-The **R-HTA in LMICs chapter** is the regional arm of the R-HTA consortium. Its mission is to:
-- Introduce R as a viable alternative to costly software
-- Support LMIC analysts and institutions in adopting R for HTA
-- Share tailored educational resources and workshops
+The **R-HTA in LMICs chapter** is the regional arm of the R-HTA consortium. Its mission is to: - Introduce R as a viable alternative to costly software - Support LMIC analysts and institutions in adopting R for HTA - Share tailored educational resources and workshops
 
 > 💡 We believe that open-source tools like R can help bridge the digital and economic divide in health analysis.
 
----
+------------------------------------------------------------------------
 
 ## Why Focus on LMICs?
 
-HTA in LMICs is often constrained by:
-- Heavy reliance on proprietary software like Microsoft Excel and TreeAge
-- Limited budgets and access to advanced tools
-- Lack of hands-on, practical R training for HTA analysts
+HTA in LMICs is often constrained by: - Heavy reliance on proprietary software like Microsoft Excel and TreeAge - Limited budgets and access to advanced tools - Lack of hands-on, practical R training for HTA analysts
 
-Meanwhile, health systems in LMICs are rapidly evolving, especially under the drive toward **Universal Health Coverage (UHC)**. This creates a growing need for:
-- Complex modelling (e.g. oncology, rare diseases)
-- Scalable and reproducible tools
-- Local capacity-building
+Meanwhile, health systems in LMICs are rapidly evolving, especially under the drive toward **Universal Health Coverage (UHC)**. This creates a growing need for: - Complex modelling (e.g. oncology, rare diseases) - Scalable and reproducible tools - Local capacity-building
 
----
+------------------------------------------------------------------------
 
 ## What We Offer
 
-Our LMIC chapter delivers:
-- **Introductory workshops**: Covering R basics and essential HTA packages
-- **Advanced tutorials**: Building cost-effectiveness models and interactive apps using [Shiny](https://shiny.rstudio.com/)
-- **Free resources and code**: All available on our [GitHub](https://github.com/) page
+Our LMIC chapter delivers: - **Introductory workshops**: Covering R basics and essential HTA packages - **Advanced tutorials**: Building cost-effectiveness models and interactive apps using [Shiny](https://shiny.rstudio.com/) - **Free resources and code**: All available on our [GitHub](https://github.com/) page
 
----
+------------------------------------------------------------------------
 
 ## Why R?
 
-**✅ Scalable**  
-R handles complex HTA models more efficiently than spreadsheet-based tools.  
+**✅ Scalable**\
+R handles complex HTA models more efficiently than spreadsheet-based tools.\
 [Read more](https://www.valueinhealthjournal.com/action/showPdf?pii=S1098-3015%2819%2930050-6)
 
-**✅ Reproducible**  
-With Git, RMarkdown, and Shiny, models can be:
-- Shared with version control
-- Easily updated
-- Delivered as interactive tools
+**✅ Reproducible**\
+With Git, RMarkdown, and Shiny, models can be: - Shared with version control - Easily updated - Delivered as interactive tools
 
-**✅ Open and Community-Driven**  
-R’s vibrant health economics ecosystem includes:
-- [BCEA](https://cran.r-project.org/web/packages/BCEA/index.html)
-- [heemod](https://cran.r-project.org/web/packages/heemod/index.html)
-- [hesim](https://github.com/hesim-dev/hesim)
-- [dampack](https://github.com/feralaes/dampack)
+**✅ Open and Community-Driven**\
+R’s vibrant health economics ecosystem includes: - [BCEA](https://cran.r-project.org/web/packages/BCEA/index.html) - [heemod](https://cran.r-project.org/web/packages/heemod/index.html) - [hesim](https://github.com/hesim-dev/hesim) - [dampack](https://github.com/feralaes/dampack)
 
----
+------------------------------------------------------------------------
 
 ## Join Us
 

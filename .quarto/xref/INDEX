@@ -25,5 +25,26 @@
   },
   "tutorials.qmd": {
     "tutorials.html": "065c7b6d"
+  },
+  "past-events.qmd": {
+    "past-events.html": "8b4fa132"
+  },
+  "workshops.qmd": {
+    "workshops.html": "748d7418"
+  },
+  "workshops2.qmd": {
+    "workshops2.html": "b463ad96"
+  },
+  "commitee.qmd": {
+    "commitee.html": "16a39b80"
+  },
+  "L_res.qmd": {
+    "L_res.html": "cd940e5b"
+  },
+  "resrcs.qmd": {
+    "resrcs.html": "cced3f3f"
+  },
+  "contact.qmd": {
+    "contact.html": "1dd3cbe1"
   }
 }

@@ -2,19 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://r-htalmicstest.org/index.html</loc>
-    <lastmod>2025-07-30T14:44:00.078Z</lastmod>
+    <lastmod>2025-08-06T10:06:53.937Z</lastmod>
   </url>
   <url>
     <loc>https://r-htalmicstest.org/about.html</loc>
-    <lastmod>2025-07-28T12:20:50.804Z</lastmod>
+    <lastmod>2025-08-03T11:32:38.742Z</lastmod>
   </url>
   <url>
     <loc>https://r-htalmicstest.org/people.html</loc>
-    <lastmod>2025-07-30T14:45:26.615Z</lastmod>
+    <lastmod>2025-08-03T17:13:36.095Z</lastmod>
   </url>
   <url>
     <loc>https://r-htalmicstest.org/tutorials.html</loc>
-    <lastmod>2025-07-28T13:08:47.168Z</lastmod>
+    <lastmod>2025-08-03T11:34:05.254Z</lastmod>
   </url>
   <url>
     <loc>https://r-htalmicstest.org/events.html</loc>
@@ -23,5 +23,33 @@
   <url>
     <loc>https://r-htalmicstest.org/resources.html</loc>
     <lastmod>2025-07-28T12:36:23.781Z</lastmod>
+  </url>
+  <url>
+    <loc>https://r-htalmicstest.org/past-events.html</loc>
+    <lastmod>2025-08-06T10:10:20.780Z</lastmod>
+  </url>
+  <url>
+    <loc>https://r-htalmicstest.org/workshops.html</loc>
+    <lastmod>2025-08-03T16:42:30.220Z</lastmod>
+  </url>
+  <url>
+    <loc>https://r-htalmicstest.org/workshops2.html</loc>
+    <lastmod>2025-08-03T13:16:29.230Z</lastmod>
+  </url>
+  <url>
+    <loc>https://r-htalmicstest.org/commitee.html</loc>
+    <lastmod>2025-08-06T10:14:56.157Z</lastmod>
+  </url>
+  <url>
+    <loc>https://r-htalmicstest.org/L_res.html</loc>
+    <lastmod>2025-08-06T09:30:59.327Z</lastmod>
+  </url>
+  <url>
+    <loc>https://r-htalmicstest.org/resrcs.html</loc>
+    <lastmod>2025-08-06T10:24:17.965Z</lastmod>
+  </url>
+  <url>
+    <loc>https://r-htalmicstest.org/contact.html</loc>
+    <lastmod>2025-08-06T12:03:20.547Z</lastmod>
   </url>
 </urlset>

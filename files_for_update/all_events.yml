@@ -1,0 +1,42 @@
+- title: "HTA in Practice - Live Session"
+  date: "2025-09-25" #for testttt
+  description: "We’re running x2 half-day workshops for health analysts seeking to start R programming for health technology assessment (HTA)."
+  image: "assets/images/events/new_event.jpg"
+  link: "https://www.eventbrite.co.uk/e/r-foundations-and-introduction-to-r-hta-modelling-tickets-1276838922589?aff=oddtdtcreator"
+  
+
+- title: "Introduction to R for HTA Modelling – 25 September 2023"
+  date: "2023-09-25"
+  description: "This half-day interactive tutorial trained LMIC health analysts on using R for HTA modelling. No prior R experience was required."
+  image: "assets/images/events/Registrations open - 25 Sept 2023 training.png"
+  link: "https://github.com/R-HTA-in-LMICs/Introduction-to-R-for-HTA-2023"
+  
+
+- title: "Advanced R-HTA Modelling – 20 January 2023"
+  date: "2023-01-20"
+  description: "Participants learned how to convert Excel-based models to R and build interactive tools with Shiny."
+  image: "assets/images/events/Advanced R-HTA Modelling Tutorial.png"
+  link: "https://github.com/R-HTA-in-LMICs/Advanced-Tutorial-2022"
+  
+
+- title: "Intermediary R-HTA Tutorial – 20 September 2022"
+  date: "2022-09-20"
+  description: "Hands-on workshop on sick-sicker models using R. Built on knowledge from Q2 tutorial."
+  image: "assets/images/events/Q3 Workshop_20SeptRegBanner.png"
+  link: "https://github.com/R-HTA-in-LMICs/September-Workshop"
+  
+
+- title: "Introductory R-HTA Tutorial – 21 June 2022"
+  date: "2022-06-21"
+  description: "Participants gained practical skills using DARTH in a simple sick-sicker model."
+  image: "assets/images/events/RegistrationsOpen_updated2.jpg"
+  link: "https://github.com/R-HTA-in-LMICs/June-Workshop"
+  
+
+- title: "Inaugural Presentation-based Workshop – 23 February 2022"
+  date: "2022-02-23"
+  description: "Missed our first workshop? Click below to view the presentations."
+  image: "assets/images/events/registration_open.png"
+  link: "/workshops/"
+  
+ 

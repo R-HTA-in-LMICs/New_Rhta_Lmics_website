@@ -1,0 +1,182 @@
+---
+title: ""
+format:
+  html:
+    page-layout: full
+    css: styles.css
+    toc: false
+    include-in-header: |
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+---
+
+# Meet the R-HTA in LMICs Committee
+
+The R-HTA in LMICs team comprises individuals from Lower-Middle Income Countries with diverse backgrounds passionate about improving healthcare decision-making through open-source tools and collaborative learning.
+
+```{r}
+#| echo: false
+#| results: asis
+#| cache: false
+
+library(yaml)
+library(glue)
+
+committee <- yaml::read_yaml("files_for_update/commitee.yml")
+
+group_order <- c("leadership", "scientific")
+group_titles <- c(
+  leadership = "Co-Chairs",
+  scientific = "Scientific Committee Members"
+)
+
+for (group in group_order) {
+  group_members <- Filter(function(m) m$group == group, committee)
+  if (length(group_members) > 0) {
+    cat(glue("<h2 class='committee-group-title'>{group_titles[[group]]}</h2>"))
+    cat('<div class="team-grid">')
+    
+    for (member in group_members) {
+      links <- c()
+      if (!is.null(member$linkedin)) {
+        links <- c(links, glue('<a href="{member$linkedin}" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>'))
+      }
+      if (!is.null(member$website)) {
+        links <- c(links, glue('<a href="{member$website}" target="_blank" class="social-icon"><i class="fas fa-globe"></i></a>'))
+      }
+      links_html <- paste(links, collapse = " ")
+      
+      cat(glue(
+        '<div class="member-card">',
+          '<div class="member-photo">',
+            '<img src="{member$image}" alt="{member$name} photo">',
+          '</div>',
+          '<div class="member-info">',
+            '<h3>{member$name}</h3>',
+            '<p class="member-role">{member$role}</p>',
+            '<p class="member-description">{member$description}</p>',
+            '<div class="member-links">{links_html}</div>',
+          '</div>',
+        '</div>'
+      ))
+    }
+    
+    cat('</div>')  # END TEAM GRID
+  }
+}
+
+
+
+```
+
+```{=html}
+<style>
+/* Title for each group */
+.committee-group-title {
+  font-size: 1.8rem;
+  margin: 3rem 0 1.5rem 0;
+  text-align: center;
+  color: #2c3e50;
+  border-bottom: 2px solid #3C8DBC;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+/* Team Grid Layout */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+/* Member Card Styling */
+.member-card {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1.2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect */
+.member-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Photo */
+.member-photo img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #3C8DBC;
+  margin-right: 1rem;
+}
+
+/* Info text */
+.member-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Name */
+.member-info h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #222;
+}
+
+/* Role (position) */
+.member-role {
+  color: #3C8DBC;
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 0.25rem 0 0.5rem 0;
+}
+
+/* Description */
+.member-description {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #555;
+  margin-bottom: 0.6rem;
+}
+
+/* Social icons */
+.member-links .social-icon {
+  margin-right: 0.6rem;
+  text-decoration: none;
+  font-weight: 600;
+  color: #87CEFA;
+  transition: color 0.2s ease;
+}
+
+.member-links .social-icon:hover {
+  color: #e65100;
+  text-decoration: underline;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 600px) {
+  .member-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .member-photo img {
+    margin: 0 0 1rem 0;
+  }
+
+  .member-info {
+    align-items: center;
+  }
+}
+
+</style>
+```

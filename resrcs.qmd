@@ -1,0 +1,125 @@
+---
+title: ""
+format:
+  html:
+    toc: false
+    include-after-body: footer.html
+resources: "learning-resources.yml"
+---
+
+::: resource-wrapper
+```{r}
+#| echo: false
+#| results: asis
+#| cache: false
+
+resources <- yaml::read_yaml("files_for_update/learning-resources.yml")
+for (cat in resources) {
+  cat_title <- paste0(cat$icon, " ", cat$category)
+  cat_desc <- cat$description
+  cat_resources <- cat$resources
+
+  cat(paste0("<div class='category'>\n"))
+  cat(paste0("<h2>", cat_title, "</h2>\n"))
+  cat(paste0("<p class='cat-desc'>", cat_desc, "</p>\n<ul class='resource-list'>\n"))
+
+  for (res in cat_resources) {
+    cat(paste0("<li><a href='", res$url, "' target='_blank'><strong>", res$name, "</strong></a>: ", res$description))
+
+    # Authors
+    if (!is.null(res$authors)) {
+      authors <- paste(res$authors, collapse = ", ")
+      cat(paste0("<div class='meta-info'><span class='meta-label'>Authors:</span> ", authors, "</div>"))
+    }
+
+    # Community Contributors
+    if (!is.null(res$community_contributors)) {
+      contributors <- paste(res$community_contributors, collapse = ", ")
+      cat(paste0("<div class='meta-info'><span class='meta-label'>Our Community Contributors:</span> ", contributors, "</div>"))
+    }
+
+    cat("</li>\n")
+  }
+
+  cat("</ul>\n</div>\n")
+}
+
+
+```
+
+```{=html}
+<style>
+/* General Layout */
+.resource-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* Category Styling */
+.category {
+  background: #f9f9fb;
+  border-left: 5px solid #007acc;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.category h2 {
+  margin-top: 0;
+  color: #005c99;
+  font-size: 1.5rem;
+}
+
+.cat-desc {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+/* Resource List */
+.resource-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.resource-list li {
+  margin: 0.6rem 0;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.resource-list li::before {
+  content: "▶";
+  position: absolute;
+  left: 0;
+  color: #007acc;
+  font-size: 0.8rem;
+}
+
+.resource-list a {
+  color: #007acc;
+  text-decoration: none;
+}
+
+.resource-list a:hover {
+  text-decoration: underline;
+}
+.meta-info {
+  font-size: 0.85rem;
+  color: #555;
+  margin-top: 0.2rem;
+  margin-left: 1.2rem;
+}
+
+.meta-label {
+  font-weight: bold;
+  color: #333;
+}
+
+</style>
+```
+:::

@@ -1,0 +1,26 @@
+######recent events box in landing page , show recent event 
+::: section-box
+## 🕒 Recent Event {.section-title}
+
+```{r, results='asis', echo=FALSE}
+
+if (nrow(past) > 0) {
+  last_event <- past[nrow(past), ]
+  cat(paste0(
+    '### ', last_event$title, '\n\n',
+    '**Date:** ', last_event$date, '\n\n',
+    '![Banner](', last_event$image, '){.event-banner}\n\n',
+    last_event$description, '\n\n',
+    '[🔗 See More Info](', last_event$link, ')\n\n'
+  ))
+}
+
+```
+
+
+[View Workshop Materials](https://github.com/R-HTA-in-LMICs/Introduction-to-R-for-HTA-2023)
+
+:::
+<div class="past-events-link">
+  <a href="past-events.qmd">📚 View All Past Events »</a>
+</div>

@@ -1,0 +1,69 @@
+- category: Books & References
+  icon: 📚
+  description: Recommended books for HTA using R
+  resources:
+    - name: R for Health Technology Assessment
+      url: https://www.routledge.com/R-for-Health-Technology-Assessment/Baio-Thom-Pechlivanoglou/p/book/9780367468910
+      description: >
+        A comprehensive guide to the end-to-end use of R in health technology assessment (HTA), covering survival analysis, decision trees, multistate models, network meta-analysis, and discrete event simulation — all explained through real-world examples with annotated R code. Ideal for HTA modellers, regulators, and health economists, enriched with case studies contributed by community members.
+      authors:
+        - Gianluca Baio
+        - Howard Thom
+        - Petros Pechlivanoglou
+      community_contributors:
+        - Buhle Ndweni
+        - Joshua Soboil
+        - Federico Cairoli
+  
+- category: Basic R
+  icon: 🔰
+  description: Introduction to R programming and scripting
+  resources:
+    - name: Intro2R script
+      url: https://github.com/R-HTA-in-LMICs/June-Workshop/blob/main/R/Intro2R.R
+      description: Input/output and object manipulation
+    - name: Intro tutorial materials
+      url: https://github.com/R-HTA-in-LMICs/June-Workshop
+      description: Hands-on R learning materials from the June workshop
+
+- category: Intermediate Modelling
+  icon: 🔁
+  description: Modeling tools based on DARTH group's materials
+  resources:
+    - name: Time-Dependent Models paper (2022)
+      url: https://arxiv.org/abs/2108.13552
+      description: Introduction to time-dependent decision models
+    - name: Simulation script
+      url: https://github.com/R-HTA-in-LMICs/September-Workshop/blob/main/analysis/cSTM_time_dep_simulation.R
+      description: R script for simulating time-dependent models
+    - name: State-residence time model
+      url: https://github.com/R-HTA-in-LMICs/September-Workshop/blob/main/analysis/Extra%20material%20-%20cSTM_time_dep_state_residence/cSTM_time_dep_state_residence.R
+      description: Simulating state-residence times
+    - name: Functions for analysis
+      url: https://github.com/R-HTA-in-LMICs/September-Workshop/tree/main/R
+      description: R functions used for HTA model simulations
+
+- category: Advanced & Interactive Modelling
+  icon: 🚀
+  description: Advanced models and Shiny apps
+  resources:
+    - name: Advanced HIV Markov model in R
+      url: https://github.com/R-HTA-in-LMICs/Advanced-Tutorial-2022
+      description: Full workflow of a health economic Markov model
+    - name: Explore interactive app
+      url: https://r-htalmics.shinyapps.io/hiv_model/
+      description: Interactive HIV model using Shiny
+
+- category: Additional Resources
+  icon: 📘
+  description: Recommended open learning materials
+  resources:
+    - name: DARTH Decision Modeling Course
+      url: https://www.mcmasterforum.org/find-evidence/learn-how/decision-modelling
+      description: Free online course in health decision modeling
+    - name: ISPOR Modeling Guidelines
+      url: https://www.ispor.org/heor-resources/good-practices-for-outcomes-research
+      description: Modeling practices and HTA methodology
+    - name: Decision Modelling in Health Economic Evaluation (book)
+      url: https://www.amazon.com/Decision-Modelling-Health-Economic-Evaluation/dp/0198526628
+      description: Key textbook for HTA decision modeling

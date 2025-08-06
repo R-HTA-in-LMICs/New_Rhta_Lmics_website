@@ -1,0 +1,67 @@
+---
+title: ""
+format:
+  html:
+    toc: false
+    page-layout: full
+    body-width: 100% 
+    css: styles.css
+---
+
+```{r setup}
+#| echo: false
+#| message: false
+#| warning: false
+#| cache: false
+library(yaml)
+library(dplyr)
+library(glue)
+library(purrr)
+
+# Load events from YAML
+events <- read_yaml("files_for_update/all_events.yml")
+
+# Convert to data frame for easier handling
+events_df <- tibble(
+  title = map_chr(events, "title"),
+  date = as.Date(map_chr(events, "date")),
+  description = map_chr(events, "description"),
+  image = map_chr(events, "image"),
+  link = map_chr(events, "link")
+)
+
+# Filter past events (before today) and sort descending
+past_events <- events_df %>%
+  filter(date < Sys.Date()) %>%
+  arrange(desc(date))
+```
+
+🕓 Past Events
+
+```{r}
+#| echo: false
+#| results: asis
+#| cache: false
+if (nrow(past_events) == 0) {
+  cat("No past events to show.")
+} else {
+  cat('<div class="event-grid">')
+
+for (i in seq_len(nrow(past_events))) {
+  cat(glue::glue(
+    '
+<div class="event-card">
+  <img src="{past_events$image[i]}" alt="{past_events$title[i]}">
+  <h3>{past_events$title[i]}</h3>
+  <p><strong>Date:</strong> {format(past_events$date[i], "%B %d, %Y")}</p>
+  <p>{past_events$description[i]}</p>
+  <a href="{past_events$link[i]}" class="btn" target="_blank">View Resources</a>
+</div>
+'
+  ))
+}
+
+cat('</div>')
+}
+
+```

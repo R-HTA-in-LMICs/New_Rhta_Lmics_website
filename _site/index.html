@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>R-HTA in LMICs</title>
+<title>index</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -66,7 +66,42 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.addEventListener("DOMContentLoaded", () => {
+
+    const brand = document.querySelector(".navbar-brand");
+
+    if (brand) {
+
+      brand.innerHTML = `
+
+        <div class="custom-brand">
+
+          <img src="assets/images/logo2-removebg-preview.png" alt="Logo" class="custom-logo" />
+
+          <div class="brand-text">
+
+            <div class="brand-title">R-HTA in LMICs</div>
+
+          <div class="brand-subtitle">A chapter of the R-HTA consortium</div>
+
+          </div>
+
+        </div>
+
+      `;
+
+    }
+
+  });
+
+</script>
+
+
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&amp;display=swap" rel="stylesheet">
 
 
 <link rel="stylesheet" href="styles.css">
@@ -82,9 +117,6 @@ ul.task-list li input[type="checkbox"] {
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
     <img src="./assets/images/logo2-removebg-preview.png" alt="" class="navbar-logo">
     </a>
-    <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">R-HTA in LMICs</span>
-    </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -97,20 +129,24 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./people.html"> 
-<span class="menu-text">Committee</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./tutorials.html"> 
 <span class="menu-text">Tutorials</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./resources.html"> 
+    <a class="nav-link" href="./resrcs.html"> 
 <span class="menu-text">Learning Resources</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./events.html"> 
-<span class="menu-text">Events &amp; Workshops</span></a>
+    <a class="nav-link" href="./workshops.html"> 
+<span class="menu-text">Workshops</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./commitee.html"> 
+<span class="menu-text">Committee</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./contact.html"> 
+<span class="menu-text">Contact Us</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -130,13 +166,18 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<div class="featured-event-box">
+<h2 class="event-title anchored">
+🚨 HTA in Practice - Live Session
+</h2>
+<p><img src="assets/images/events/new_event.jpg" class="event-banner"> <a class="btn btn-highlight" href="https://www.eventbrite.co.uk/e/r-foundations-and-introduction-to-r-hta-modelling-tickets-1276838922589?aff=oddtdtcreator">👉 Reserve Your Spot</a></p>
+</div>
 <section id="r-for-hta-in-lmics" class="level1 hero" style="background-color:#eaf3fc; padding: 3rem; border-radius: 16px; text-align: left;">
 <h1>R for HTA in LMICs</h1>
 <p><strong>A global initiative to support HTA analysts in low- and middle-income countries using open-source R tools.</strong></p>
 <p>We help health economists and decision modelers in LMICs use R for cost-effectiveness analysis and health technology assessment.</p>
-<p><a href="./tutorials.html" class="btn btn-primary">Explore Our Tutorials</a> <a href="./people.html" class="btn btn-outline">Meet the Committee</a></p>
+<p><a href="./workshops.html" class="btn btn-primary">Explore Our Workshops</a> <a href="./commitee.html" class="btn btn-outline">Meet the Committee</a></p>
 </section>
-<hr>
 <section id="who-we-are" class="level2 section-title section-box">
 <h2 class="section-title anchored" data-anchor-id="who-we-are">Who We Are</h2>
 <p><a href="./about.html">R-HTA in LMICs</a> is the regional chapter of the global <a href="https://r-hta.org/">R-HTA</a> consortium.<br>
@@ -151,18 +192,27 @@ We promote the use of R for HTA in LMICs through open-access tutorials, workshop
 Tutorials
 </h3>
 <p>Hands-on R training for health economists.</p>
+<div class="past-events-link">
+<p><a href="./tutorials.html">🎓 Browse R Training Tutorials » </a></p>
+</div>
 </div>
 <div class="card">
 <h3 class="anchored">
 Resources
 </h3>
 <p>Curated tools and links for R and HTA.</p>
+<div class="past-events-link">
+<p><a href="resources.qmd">🛠️ Explore R + HTA Tools »</a></p>
+</div>
 </div>
 <div class="card">
 <h3 class="anchored">
 Events
 </h3>
 <p>Workshops led by international experts.</p>
+<div class="past-events-link">
+<p><a href="./past-events.html">📚 View All Past Events »</a></p>
+</div>
 </div>
 </div>
 </section>
@@ -173,23 +223,74 @@ Events
 <li>Join our mailing list via the <a href="https://r-hta.org/">R-HTA main site</a></li>
 </ul>
 </section>
-<section id="recent-event-highlight" class="level2 section-title section-box">
-<h2 class="section-title anchored" data-anchor-id="recent-event-highlight">Recent Event Highlight</h2>
-<p><strong>Introduction to R for HTA Modelling – 25 September 2023</strong></p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="assets/images/Registrations open - 25 Sept 2023 training .png" class="img-fluid figure-img"></p>
-<figcaption>Intro tutorial banner</figcaption>
-</figure>
-</div>
-<p>This half-day interactive tutorial trained LMIC health analysts on using R for HTA modelling.<br>
-Participants learned R basics and built a simple cost-effectiveness model.</p>
-<p><a href="https://github.com/R-HTA-in-LMICs/Introduction-to-R-for-HTA-2023">View Workshop Materials</a></p>
-</section>
 <section id="past-tutorials" class="level2 section-title section-box">
 <h2 class="section-title anchored" data-anchor-id="past-tutorials">Past Tutorials</h2>
 <p><a href="./tutorials.html">Browse our full list of tutorials</a></p>
 </section>
+<style>
+  .featured-event-box {
+  background-color: #fff8e1;
+  border-left: 6px solid #ff9800;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  animation: fadeIn 0.8s ease-in;
+  text-align: center;
+}
+
+/* Make image more prominent */
+.event-banner {
+  width: 100%;
+  max-height: 500px;
+  object-fit: contain; 
+  border-radius: 8px;
+  margin: 0 auto 1rem auto;
+  display: block;
+}
+
+/* Smaller title */
+.event-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0.5rem 0;
+}
+
+/* Date formatting */
+.event-date {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+/* Description */
+.event-description {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 1.5rem;
+}
+
+.featured-event-box .btn {
+  align-self: flex-end;
+  background-color: #ff9800;
+  color: white;
+  padding: 0.75rem 1.5rem;  /* Bigger padding */
+  font-size: 1.1rem;         /* Bigger text */
+  border-radius: 8px;        /* Softer edges */
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Nice subtle shadow */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+   
+}
+
+.featured-event-box .btn:hover {
+  background-color: #e68900;
+  transform: scale(1.05);  /* Slight zoom effect on hover */
+}
+
+</style>
 
 
 
@@ -222,7 +323,7 @@ Participants learned R basics and built a simple cost-effectiveness model.</p>
 
         <a href="about.html">Our Mission</a>
 
-        <a href="team.html">Team</a>
+        <a href="people.html">Team</a>
 
       </div>
 
@@ -262,9 +363,15 @@ Participants learned R basics and built a simple cost-effectiveness model.</p>
 
   <div class="footer-bottom">
 
-    © 2025 R-HTA in LMICs. All rights reserved.
+  © 2025 R-HTA in LMICs. Maintained by 
 
-  </div>
+  <a href="https://www.linkedin.com/in/islem-meherzi-bba309b3/" target="_blank" rel="noopener noreferrer">
+
+    Islem
+
+  </a>.
+
+</div>
 
 </footer>
 

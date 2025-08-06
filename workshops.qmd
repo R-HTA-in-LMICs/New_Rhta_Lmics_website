@@ -1,0 +1,158 @@
+---
+title: "Workshops"
+format:
+  html:
+    toc: true
+    toc-title: "Past Workshops"
+execute:
+  freeze: auto
+---
+
+The R-HTA in LMICs chapter hosts annual workshops showcasing R applications in health economics from students, academics, and professionals in LMICs.
+
+```{r}
+#| echo: false
+#| results: asis
+#| cache: false
+
+library(yaml)
+library(purrr)
+
+workshops <- yaml::read_yaml("files_for_update/workshops.yml")
+
+icon_link <- function(icon, url, label) {
+  sprintf('<a href="%s" target="_blank" title="%s" class="icon-link">%s</a>',
+          url, label, icon)
+}
+
+icons <- list(
+  github  = "<i class='fab fa-github'></i> GitHub",
+  slides  = "<i class='fas fa-file-powerpoint'></i> Slides",    # Font Awesome PowerPoint icon
+  youtube = "<i class='fab fa-youtube'></i> YouTube",          # Font Awesome YouTube icon
+  app     = "<i class='fas fa-globe'></i> App",                 # Font Awesome Globe icon
+  article = "<i class='fas fa-file-alt'></i> Article",          # Font Awesome File icon
+  link    = "<i class='fas fa-link'></i> Link"                  # Font Awesome Link icon
+)
+
+
+for (wk in workshops) {
+  cat(sprintf('<div class="workshop-block">\n<h2>📅 %s</h2>\n', wk$year))
+
+  if (!is.null(wk$description)) {
+    cat(sprintf('<p class="workshop-description">⚠️ %s</p>\n', wk$description))
+  }
+
+  if (!is.null(wk$external_link)) {
+    cat(sprintf('<p><a href="%s" target="_blank" class="external-link">🔗 Visit External Workshop Page</a></p>\n', wk$external_link))
+  }
+
+  if (!is.null(wk$presentations)) {
+    cat('<div class="presentation-grid">\n')
+
+    for (p in wk$presentations) {
+      presenters <- if (is.character(p$presenter_url)) {
+        sprintf('<a href="%s" target="_blank">%s</a>', p$presenter_url, p$presenter)
+      } else {
+        paste(
+          map2_chr(strsplit(p$presenter, ",\\s*")[[1]], p$presenter_url,
+                   ~sprintf('<a href="%s" target="_blank">%s</a>', .y, .x)),
+          collapse = ", "
+        )
+      }
+
+      cat('<div class="presentation-card">\n')
+      cat(sprintf('<h3>%s</h3>\n<p class="presenter">%s</p>\n', p$title, presenters))
+      if (!is.null(p$description)) cat(sprintf('<p>%s</p>\n', p$description))
+
+      # Add icons if links exist
+      cat('<div class="resource-links">\n')
+      for (key in names(icons)) {
+        if (!is.null(p[[key]])) {
+          cat(icon_link(icons[[key]], p[[key]], key), " ")
+        }
+      }
+      cat('</div>\n</div>\n')
+    }
+
+    cat('</div>\n') # close grid
+  }
+
+  cat('</div>\n<hr>\n') # close workshop block
+}
+
+
+```
+
+::: cell
+```{=html}
+<style>
+
+.workshop-block {
+  margin-bottom: 3rem;
+}
+
+.workshop-description {
+  background-color: #fff8dc;
+  padding: 0.6rem 1rem;
+  border-left: 4px solid #ffa500;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.presentation-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.presentation-card {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-left: 5px solid #4682b4;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.05);
+}
+
+.presentation-card h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.presentation-card .presenter {
+  font-style: italic;
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.resource-links {
+  margin-top: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.icon-link {
+  margin-right: 0.5rem;
+  text-decoration: none;
+}
+
+.external-link {
+  background: #e7f3ff;
+  padding: 0.4rem 0.8rem;
+  display: inline-block;
+  border-radius: 4px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #1a73e8;
+}
+
+.external-link:hover {
+  background-color: #d0e6ff;
+}
+
+</style>
+```
+:::
