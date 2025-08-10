@@ -48,7 +48,21 @@
   role: Senior Lecturer
   group: scientific
   description: >
-     Senior Lecturer, Medical Biochemistry, Walter Sisulu UniversitySenior Lecturer, Medical Biochemistry, Walter Sisulu University.
+    Hannibal Tafadzwa Musarurwa is a distinguished senior academic at the Medical
+    School of Walter Sisulu University in Mthatha. With a robust background in
+    biotechnology, molecular biology, science communication, and biostatistics, he has
+    significantly advanced research in traditional medicine as well as cardiovascular and
+    metabolic physiology.
+    
+  # Currently, his academic endeavours focus on the pivotal roles
+  #   of traditional health practitioners in rural communities and the effects of antiretroviral
+  #   drugs on the microbiome. Adopting a transdisciplinary and interdisciplinary
+  #   approach, he seamlessly connects scientific research with community health,
+  #   championing holistic and inclusive healthcare delivery in culturally and
+  #   epidemiologically diverse low- and middle-income settings. Moreover, he plays an
+  #   active role in scientific committees that empower scientists and researchers from
+  #   these regions to utilise R for health technology assessments, while also serving as a
+  #   judge for PAICTA hackathons.
   linkedin: https://www.linkedin.com/in/hannibal-musarurwa-654140b/
   image: "assets/images/commitee/Hannibal.jpeg"
   

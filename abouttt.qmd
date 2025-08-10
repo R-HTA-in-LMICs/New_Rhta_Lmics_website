@@ -4,11 +4,12 @@ format:
     toc: false
     page-layout: full
     css: styles.css
+image: assets/images/avatar.png
 ---
 
-# About R-HTA
+# About R-HTA in LMICs
 
-[R-HTA](https://r-hta.org/) is a consortium focused on promoting the use of R for health economics and health technology assessment (HTA). The R for HTA in LMICs chapter is dedicated to introducing and showcasing the strengths of R programming to HTA analysts and healthcare institutions in low- and middle-income countries (LMICs). It hosts an annual workshop and quarterly tutorials, providing a platform where LMIC students and members of partner organisations can present their work, share experiences, and learn a wide range of R-based public health analysis techniques.
+R-HTA is a consortium focused on promoting the use of R for health economics and health technology assessment (HTA). While its core members are from the Americas and the UK—representing government institutions like [NICE](https://www.nice.org.uk/), academia, and industry—R-HTA aims to serve a global community of analysts.
 
 ------------------------------------------------------------------------
 
@@ -21,11 +22,7 @@ Learn more about our [workshops](workshops.qmd) and [learning resources](learnin
 
 ## What is R-HTA in LMICs?
 
-The **R-HTA in LMICs chapter** is the regional arm of the R-HTA consortium. Its mission is to:
-
--   Introduce R as a viable alternative to costly software
--   Support LMIC analysts and institutions in adopting R for HTA
--   Share tailored educational resources and workshops
+The **R-HTA in LMICs chapter** is the regional arm of the R-HTA consortium. Its mission is to: - Introduce R as a viable alternative to costly software - Support LMIC analysts and institutions in adopting R for HTA - Share tailored educational resources and workshops
 
 We believe that open-source tools like R can help bridge the digital and economic divide in health analysis, fostering a community that thrives on collaboration and shared innovation.
 
@@ -68,3 +65,139 @@ R’s vibrant health economics ecosystem includes: - [BCEA](https://cran.r-proje
 
 We welcome collaborators and learners alike—join us in building a stronger foundation for HTA in LMICs using R.\
 Visit our [contact page](contact.qmd) to connect with our team.
+
+------------------------------------------------------------------------
+
+```{=html}
+<style>
+/* Global Styles */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8fafc;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Section Container */
+section, .content-block {
+  max-width: 1100px;
+  margin: auto;
+  padding: 2rem 1.5rem;
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: #005c99;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  position: relative;
+}
+h1::after, h2::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background-color: #00a6d6;
+  border-radius: 3px;
+}
+
+/* Links */
+a {
+  color: #007acc;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+a:hover {
+  text-decoration: underline;
+  color: #005c99;
+}
+
+/* Content Block Styling */
+.content-block {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.content-block:nth-child(even) {
+  flex-direction: row-reverse;
+  background: #f0f6fa;
+}
+.content-block:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+/* Image Styling */
+.content-block img {
+  flex: 0 0 320px;
+  border-radius: 10px;
+  object-fit: cover;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+.content-block img:hover {
+  transform: scale(1.05);
+}
+
+/* Text Area */
+.content-text {
+  flex: 1;
+  min-width: 280px;
+}
+.content-text p {
+  margin-bottom: 1rem;
+}
+
+/* Highlight Box */
+.highlight {
+  background: #e6f4f9;
+  padding: 1rem 1.5rem;
+  border-left: 4px solid #00a6d6;
+  border-radius: 6px;
+  margin: 1rem 0;
+}
+
+/* Button Styling */
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: #007acc;
+  color: white;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.btn:hover {
+  background-color: #005c99;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .content-block {
+    flex-direction: column !important;
+    text-align: center;
+  }
+  .content-block img {
+    max-width: 100%;
+  }
+  h1::after, h2::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+</style>
+```

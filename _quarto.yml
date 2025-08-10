@@ -8,12 +8,10 @@ website:
     left:
       - href: about.qmd
         text: About
-      - href: tutorials.qmd
-        text: Tutorials
-      - href: resrcs.qmd
-        text: Learning Resources
       - href: workshops.qmd
         text: Workshops
+      - href: resrcs.qmd
+        text: Learning Resources
       - href: commitee.qmd
         text: Committee
       - href: contact.qmd
@@ -21,7 +19,7 @@ website:
  
 format:
   html:
-    theme: yeti #yeti #lumen #simplex #lumen #yeti   #  litera     # or 'minty', 'flatly', etc.
+    theme: yeti #lux #yeti #lumen #simplex #lumen #yeti   #  litera     # or 'minty', 'flatly', etc.
     toc: true
     css: styles.css
     page-layout: full

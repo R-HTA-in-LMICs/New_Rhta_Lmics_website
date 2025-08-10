@@ -77,7 +77,7 @@ We promote the use of R for HTA in LMICs through open-access tutorials, workshop
 Hands-on R training for health economists.
 
 ::: past-events-link
-<a href="tutorials.qmd">🎓 Browse R Training Tutorials » </a>
+<a href="workshops.qmd">Browse our Workshops » </a>
 :::
 ::::
 
@@ -87,7 +87,7 @@ Hands-on R training for health economists.
 Curated tools and links for R and HTA.
 
 ::: past-events-link
-<a href="resources.qmd">🛠️ Explore R + HTA Tools »</a>
+<a href="resrcs.qmd"> Explore R + HTA Tools »</a>
 :::
 ::::
 
@@ -97,7 +97,7 @@ Curated tools and links for R and HTA.
 Workshops led by international experts.
 
 ::: past-events-link
-<a href="past-events.qmd">📚 View All Past Events »</a>
+<a href="past-events.qmd">View All Past Events »</a>
 :::
 ::::
 :::::::::
@@ -107,14 +107,11 @@ Workshops led by international experts.
 ## Get Involved {.section-title}
 
 -   Visit our [GitHub repository](https://github.com/R-HTA-in-LMICs)
+-   [Contact us](contact.qmd) — Have a question or collaboration idea? We’d love to hear from you!
 -   Join our mailing list via the [R-HTA main site](https://r-hta.org/)
 :::
 
-::: section-box
-## Past Tutorials {.section-title}
 
-[Browse our full list of tutorials](tutorials.qmd)
-:::
 
 ```{=html}
 <style>
