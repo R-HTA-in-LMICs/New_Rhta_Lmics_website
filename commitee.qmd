@@ -53,7 +53,10 @@ for (group in group_order) {
           '<div class="member-info">',
             '<h3>{member$name}</h3>',
             '<p class="member-role">{member$role}</p>',
-            '<p class="member-description">{member$description}</p>',
+            '<p class="member-description clamp-text">{member$description}</p>',
+            '<span class="read-more-btn" style="display:none;">Show more <i class="fas fa-chevron-down"></i></span>'
+
+,
             '<div class="member-links">{links_html}</div>',
           '</div>',
         '</div>'
@@ -63,8 +66,6 @@ for (group in group_order) {
     cat('</div>')  # END TEAM GRID
   }
 }
-
-
 
 ```
 
@@ -93,7 +94,7 @@ for (group in group_order) {
 /* Member Card Styling */
 .member-card {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   background-color: #ffffff;
   border-radius: 12px;
   padding: 1.2rem;
@@ -140,13 +141,49 @@ for (group in group_order) {
   margin: 0.25rem 0 0.5rem 0;
 }
 
-/* Description */
 .member-description {
+  position: relative;
   font-size: 0.95rem;
   line-height: 1.5;
   color: #555;
   margin-bottom: 0.6rem;
+  /* no clamp by default */
 }
+
+.member-description.clamped {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5; /* clamp to 5 lines */
+  -webkit-box-orient: vertical;
+}
+
+.member-description.clamped::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1.5em;
+  background: linear-gradient(to bottom, rgba(255,255,255,0), white 80%);
+}
+
+/* Toggle button styling */
+.read-more-btn {
+  color: #3C8DBC;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-bottom: 0.6rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.read-more-btn i {
+  transition: transform 0.3s ease;
+}
+.read-more-btn.expanded i {
+  transform: rotate(180deg);
+}
+
 
 /* Social icons */
 .member-links .social-icon {
@@ -177,6 +214,51 @@ for (group in group_order) {
     align-items: center;
   }
 }
-
 </style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll(".member-card").forEach(function(card) {
+    const desc = card.querySelector(".member-description");
+    const btn = card.querySelector(".read-more-btn");
+
+    // Get line height in pixels from computed styles
+    const lineHeight = parseFloat(window.getComputedStyle(desc).lineHeight);
+    const maxLines = 5;
+    const maxHeight = lineHeight * maxLines;
+
+    // Measure full height (without clamp)
+    // Temporarily remove any clamp class to measure real height
+    desc.classList.remove("clamped");
+    const fullHeight = desc.scrollHeight;
+
+    if (fullHeight > maxHeight + 1) {
+      // Text longer than 4 lines, apply clamp and show button
+      desc.classList.add("clamped");
+      btn.style.display = "inline-flex";
+
+      btn.addEventListener("click", function() {
+        const isExpanded = desc.classList.toggle("expanded");
+        this.classList.toggle("expanded", isExpanded);
+        this.innerHTML = isExpanded
+          ? 'Show less <i class="fas fa-chevron-up"></i>'
+          : 'Show more <i class="fas fa-chevron-down"></i>';
+
+        if (isExpanded) {
+          desc.classList.remove("clamped");
+          desc.style.position = "static";  // remove fade overlay area if needed
+        } else {
+          desc.classList.add("clamped");
+          desc.style.position = "relative"; // restore fade overlay
+        }
+      });
+    } else {
+      // Text fits within 5 lines: no clamp, no button
+      btn.style.display = "none";
+    }
+  });
+});
+
+
+</script>
 ```

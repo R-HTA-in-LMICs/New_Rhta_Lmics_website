@@ -20,17 +20,21 @@
   role: Health Economist
   group: scientific
   description: >
-    Carina is a health economist with a background in industrial engineering. Her expertise lie in complex simulation modelling. She holds a BSc and an MSc in Industrial engineering from the University of Pretoria and University of Twente, respectively.
- #   Carina completed her PhD in health economic modelling, also at the University of Twente in the Netherlands, where her research focused on a multi-disease screening program. Carina is currently working as a health economist at Lumanity, building and adapting global cost-effectiveness models for reimbursement submissions in various countries..
+     Carina is a health economist with a background in industrial engineering. Her expertise lie in complex simulation modelling. She holds a BSc and an MSc in Industrial engineering from the University of Pretoria and University of Twente, respectively.
+     
+     Carina completed her PhD in health economic modelling, also at the University of Twente in the Netherlands, where her research focused on a multi-disease screening program. Carina is currently working as a health economist at Lumanity, building and adapting global cost-effectiveness models for reimbursement submissions in various countries.
+  
   image: "assets/images/commitee/cBehr.jpeg"
   
 - name: Islem Meherzi
   role: Data Science Engineer
   group: scientific
   description: >
-      Islem is a Senior Data Science and Research Engineer with over 7 years of experience, specializing in healthcare data solutions.
-  #As a Principal Data Scientist, she has led projects in Data Science, RPA for Data, NLP, automated testing, and containerization, with a strong focus on leveraging R as a primary tool.
-  #Currently a Researcher and Instructor, she combines her technical expertise with a passion for problem-solving, collaboration, and knowledge-sharing to drive impactful solutions in healthcare."
+     Islem is a Senior Data Science Engineer with over 8 years of experience specializing in healthcare data solutions. She is also a researcher dedicated to advancing healthcare innovation through cutting-edge research projects that leverage health data.
+     
+     She has successfully led projects in Data Science, Robotic Process Automation (RPA) for data, Natural Language Processing (NLP), automated testing, and containerization. Her expertise spans a variety of core tools and techniques, including R programming, DevOps practices, and Quarto.
+     
+     Islem combines deep technical knowledge with a strong passion for problem-solving, collaboration, and knowledge sharing to deliver impactful solutions that improve healthcare outcomes.
   linkedin: https://www.linkedin.com/in/islem-meherzi-bba309b3/
   image: "assets/images/commitee/islem.png"
   
@@ -39,8 +43,10 @@
   group: scientific
   description: >
      Satoshi is a research specialist with expertise in health policy and decision analyses, focusing on simulation modeling and cost-effectiveness evaluations.
-  #He holds a Bachelor of Veterinary Science from the University of Tokyo and a Master of Development Practice from UC Berkeley.
-  #His research spans disease modeling, public health strategies, and global health policy, driven by a commitment to advancing evidence-based decision-making in resource-limited settings. As a Science Committee member of R-HTA in LMICs, Satoshi leverages his proficiency in R to support health technology assessment and foster capacity-building among researchers and practitioners in low- and middle-income countries.
+     
+     He holds a Bachelor of Veterinary Science from the University of Tokyo and a Master of Development Practice from UC Berkeley.
+     
+     His research spans disease modeling, public health strategies, and global health policy, driven by a commitment to advancing evidence-based decision-making in resource-limited settings. As a Science Committee member of R-HTA in LMICs, Satoshi leverages his proficiency in R to support health technology assessment and foster capacity-building among researchers and practitioners in low- and middle-income countries.
   linkedin: https://www.linkedin.com/in/satoshi-koiso/
   image: "assets/images/commitee/Satoshi.jpg"
   
@@ -54,15 +60,16 @@
     significantly advanced research in traditional medicine as well as cardiovascular and
     metabolic physiology.
     
-  # Currently, his academic endeavours focus on the pivotal roles
-  #   of traditional health practitioners in rural communities and the effects of antiretroviral
-  #   drugs on the microbiome. Adopting a transdisciplinary and interdisciplinary
-  #   approach, he seamlessly connects scientific research with community health,
-  #   championing holistic and inclusive healthcare delivery in culturally and
-  #   epidemiologically diverse low- and middle-income settings. Moreover, he plays an
-  #   active role in scientific committees that empower scientists and researchers from
-  #   these regions to utilise R for health technology assessments, while also serving as a
-  #   judge for PAICTA hackathons.
+    Currently, his academic endeavours focus on the pivotal roles
+    of traditional health practitioners in rural communities and the effects of antiretroviral
+    drugs on the microbiome. Adopting a transdisciplinary and interdisciplinary
+    approach, he seamlessly connects scientific research with community health,
+    championing holistic and inclusive healthcare delivery in culturally and
+    epidemiologically diverse low- and middle-income settings.
+    
+    Moreover, he plays an active role in scientific committees that empower scientists and researchers from
+    these regions to utilise R for health technology assessments, while also serving as a
+    judge for PAICTA hackathons.
   linkedin: https://www.linkedin.com/in/hannibal-musarurwa-654140b/
   image: "assets/images/commitee/Hannibal.jpeg"
   
