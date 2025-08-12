@@ -3,7 +3,7 @@ name: Deploy Quarto Website
 on:
   push:
     branches:
-      - main       # c
+      - main       
   workflow_dispatch: # manual trigger support
 
 permissions:
@@ -32,7 +32,7 @@ jobs:
       - name: Setup Quarto
         uses: quarto-dev/quarto-actions/setup@v2
         with:
-          version: 'latest'
+          version: latest
 
       - name: Setup Pandoc
         uses: r-lib/actions/setup-pandoc@v2
