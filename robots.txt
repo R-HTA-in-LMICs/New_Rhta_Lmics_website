@@ -1,1 +1,1 @@
-Sitemap: https://R-HTA-in-LMICs.github.io/New_Rhta_Lmics_website_test/sitemap.xml
+Sitemap: https://r-hta-in-lmics.github.io/New_Rhta_Lmics_website_test/sitemap.xml
