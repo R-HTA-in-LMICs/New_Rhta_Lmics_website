@@ -27,7 +27,7 @@ jobs:
 
       - name: Install required R packages
         run: |
-          Rscript -e "install.packages(c('yaml', 'glue', 'dplyr', 'purrr'), repos='https://cloud.r-project.org')"
+          Rscript -e "install.packages(c('yaml', 'glue', 'dplyr', 'purrr','knitr','rmarkdown'), repos='https://cloud.r-project.org')"
 
       - name: Setup Quarto
         uses: quarto-dev/quarto-actions/setup@v2
