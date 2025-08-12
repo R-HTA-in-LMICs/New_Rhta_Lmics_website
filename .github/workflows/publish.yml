@@ -3,11 +3,11 @@ name: Deploy Quarto Website
 on:
   push:
     branches:
-      - main         # change if your default branch is different
-  workflow_dispatch:   # manual trigger support
+      - main       # change if your default branch is different
+  workflow_dispatch: # manual trigger support
 
 permissions:
-  contents: write      # permission needed to push to gh-pages branch
+  contents: write
 
 jobs:
   build-deploy:
@@ -22,6 +22,13 @@ jobs:
         with:
           r-version: 'latest'
 
+      - name: Install system dependencies
+        run: sudo apt-get update && sudo apt-get install -y libcurl4-openssl-dev libssl-dev libxml2-dev
+
+      - name: Install required R packages
+        run: |
+          Rscript -e "install.packages(c('yaml', 'glue', 'dplyr', 'purrr'), repos='https://cloud.r-project.org')"
+
       - name: Setup Quarto
         uses: quarto-dev/quarto-actions/setup@v2
         with:
@@ -29,11 +36,6 @@ jobs:
 
       - name: Setup Pandoc
         uses: r-lib/actions/setup-pandoc@v2
-
-      # Optional: install R packages if you have a renv.lock
-      # - name: Restore R packages with renv
-      #   if: fileExists('renv.lock')
-      #   uses: r-lib/actions/setup-renv@v2
 
       - name: Render Quarto Site
         run: quarto render
@@ -43,4 +45,3 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: _site
-          # Optional: if your site is in a different folder, change publish_dir accordingly
