@@ -1,5 +1,6 @@
 project:
   type: website
+  output-dir: _site
 website:
   title: ""
   site-url: "https://r-hta-in-lmics.github.io/New_Rhta_Lmics_website_test/"
