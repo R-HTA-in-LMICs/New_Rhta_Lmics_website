@@ -31,9 +31,9 @@ jobs:
         uses: r-lib/actions/setup-pandoc@v2
 
       # Optional: install R packages if you have a renv.lock
-      - name: Restore R packages with renv
-        if: fileExists('renv.lock')
-        uses: r-lib/actions/setup-renv@v2
+      # - name: Restore R packages with renv
+      #   if: fileExists('renv.lock')
+      #   uses: r-lib/actions/setup-renv@v2
 
       - name: Render Quarto Site
         run: quarto render
