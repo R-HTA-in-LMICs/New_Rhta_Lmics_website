@@ -11,7 +11,7 @@ format:
 
 # Meet the R-HTA in LMICs Committee
 
-The R-HTA in LMICs team comprises individuals from Lower-Middle Income Countries with diverse backgrounds passionate about improving healthcare decision-making through open-source tools and collaborative learning.
+The R-HTA in LMICs team comprises individuals from around the world with diverse backgrounds, all passionate about improving healthcare decision-making through open-source tools and collaborative learning.
 
 ```{r}
 #| echo: false
