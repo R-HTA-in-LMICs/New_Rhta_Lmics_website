@@ -4,7 +4,7 @@ project:
   
 website:
   title: ""
-  site-url: "https://r-hta-in-lmics.github.io/New_Rhta_Lmics_website_test/"
+  site-url: "https://r-hta-in-lmics.github.io/New_Rhta_Lmics_website/"
   favicon: "favicon-32x32.png"
   navbar:
     logo: "assets/images/logo2-removebg-preview.png"   # Logo will link to index.qmd by default
